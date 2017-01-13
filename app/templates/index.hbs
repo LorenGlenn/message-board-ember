@@ -1,3 +1,9 @@
-<h2>About Super Rentals</h2>
+<h1> Welcome to Message Board </h1>
 
-<p>The Super Rentals website was created to explore the wonderful world of Ember.js. This project allows us to imagine traveling the world while simultaneously traversing the pathways of the Ember framework!</p>
+Click a message to leave a reply!
+
+<ul>
+  {{#each model as |message|}}
+     {{message-tile message=message}}
+  {{/each}}
+</ul>

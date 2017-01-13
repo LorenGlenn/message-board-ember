@@ -10,26 +10,21 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+        }
       },
 
       firebase: {
-        apiKey: 'AIzaSyBskNnqJHSo4IgBE8qunI4CNa5ipL8-Ub4',
-        authDomain: 'message-board-b7172.firebaseapp.com',
-        databaseURL: 'https://message-board-b7172.firebaseio.com',
-        storageBucket: 'message-board-b7172.appspot.com'
+        apiKey: "AIzaSyBskNnqJHSo4IgBE8qunI4CNa5ipL8-Ub4",
+        authDomain: "message-board-b7172.firebaseapp.com",
+        databaseURL: "https://message-board-b7172.firebaseio.com",
+        storageBucket: "message-board-b7172.appspot.com"
       },
 
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
-    },
-
-    APP: {
+      APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
-  };
+      }
+    };
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
