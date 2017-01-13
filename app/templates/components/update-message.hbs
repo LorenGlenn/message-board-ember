@@ -12,6 +12,11 @@
         {{input value=comment id="comment" placeholder=message.comment}}
       </div>
 
+      <div class="form-group">
+        <label for="notes">Notes:</label>
+        {{input value=notes id="notes" placeholder=message.notes}}
+      </div>
+
       <button {{action 'update' message}}>Save</button>
     </form>
   </div>
