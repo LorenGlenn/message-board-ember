@@ -1,3 +1,10 @@
 <p>Author: {{message.author}}</p>
 <p>Message: {{message.comment}}</p>
 <p>Notes: {{message.notes}}</p>
+
+<h2> Replies </h2>
+<ul>
+  {{#each message.replies as |reply|}}
+    {{reply-tile reply=reply}}
+  {{/each}}
+</ul>
