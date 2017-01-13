@@ -1,1 +1,20 @@
-{{yield}}
+{{#if addNewMessage}}
+  <h1>New Message</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="message">Enter your message:</label>
+        {{input value=message id="message"}}
+      </div>
+
+      <button {{action 'saveMessage'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'messageFormShow'}}>New Message</button>
+{{/if}}
