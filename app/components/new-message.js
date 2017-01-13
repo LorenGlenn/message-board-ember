@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     saveMessage() {
       var params = {
         author: this.get('author'),
-        message: this.get('message'),
+        comment: this.get('comment'),
       };
       this.set('addNewMessage', false);
       this.sendAction('saveMessage', params);

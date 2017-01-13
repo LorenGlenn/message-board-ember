@@ -1,8 +1,8 @@
 { "messages": [{
     "author": "Bob",
-    "message": "Test"
+    "comment": "Test"
   }, {
       "author": "Danny",
-      "message": "Hello World"
+      "comment": "Hello World"
     }]
 }

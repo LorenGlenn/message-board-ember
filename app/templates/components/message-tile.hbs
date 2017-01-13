@@ -1,1 +1,4 @@
-<li>"{{message.message}}" -by {{message.author}} <button>Reply</button></li>
+<li>
+  "{{message.comment}}" -by {{message.author}} <button>Reply</button>
+  {{update-message message=message update="update"}}
+</li>
